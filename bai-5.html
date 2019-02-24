@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="diem_kiem_tra" placeholder="nhap diem kiem tra">
+<input type="number" id="diem_giua_ky" placeholder="nhap diem thi giua ky">
+<input type="number" id="diem_cuoi_ky" placeholder="nhap diem thi cuoi ky">
+<input type="button" value="xem ket qua" onclick="count()">
+<script>
+    function count() {
+        let diem_kiem_tra = parseFloat(document.getElementById('diem_kiem_tra').value)
+        let diem_giua_ky = parseFloat(document.getElementById('diem_giua_ky').value)
+        let diem_cuoi_ky = parseFloat(document.getElementById('diem_cuoi_ky').value);
+        let result = diem_kiem_tra * 0.1 + diem_giua_ky * 0.3 + diem_cuoi_ky * 0.6
+
+        if (result > 8.5) {
+            document.write("loai A")
+        } else if (result > 7) {
+            document.write("loai B")
+        } else if (result > 5.5) {
+            document.write("loai C")
+        } else if (result > 4) {
+            document.write("loai D")
+        } else {
+            document.write("loai F")
+        }
+    }
+</script>
+</body>
+</html>

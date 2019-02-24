@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tuoi hoc sinh hoc lop 10</title>
+</head>
+<body>
+<input type="number" id="age" placeholder="nhap tuoi hoc sinh">
+<input type="button" value="xem ket qua" onclick="check()">
+<script>
+    function check() {
+        let age = parseInt(document.getElementById('age').value)
+        if (age < 16) {
+            document.write('khong du dieu kien hoc lop 10')
+        } else {
+            document.write('du dieu kien hoc lop 10')
+        }
+    }
+</script>
+</body>
+</html>

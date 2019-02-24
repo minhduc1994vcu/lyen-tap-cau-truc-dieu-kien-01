@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+      let so_dien= parseFloat(prompt('nhập số điện đã dùng'))
+        if(so_dien<50){
+            alert("số tiền phải nộp là " + so_dien*2000)
+        }
+        else if (so_dien<100){
+            alert("số tiền phải nộp là " + ((so_dien-50)*3000 +50*2000) )
+        }
+        else if (so_dien<150){
+            alert("số tiền phải nộp là " + ((so_dien-100)*4000 + 50*2000+50*3000))
+        }
+        else alert("số tiền phải nộp là " + ((so_dien-150)*5000 +50*2000 + 50*3000 +50*4000))
+    </script>
+</body>
+</html>
